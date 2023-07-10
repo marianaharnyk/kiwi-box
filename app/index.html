@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+<header id="header" class="header">
+    <div class="header__menu menu">
+        <nav class="menu__body">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#header" class="menu__link">Home</a></li>
+                <li class="menu__item"><a class="menu__link">Boxes</a>
+                    <ul class="menu__dropdown dropdown">
+                        <li class="dropdown__item"><a href="#box-info" class="dropdown__link">What's inside</a></li>
+                        <li class="dropdown__item"><a href="#sign-up" class="dropdown__link">Kiwi Eco Box</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="menu__logo">
+                <img src="./images/dist/logo.svg" alt="Logo icon" class="menu__logo-image">
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="#sign-up" class="menu__link">Account</a></li>
+            </ul>
+            <div class="menu__burger">
+                <span class="menu__burger-dash"> </span>
+            </div>
+        </nav>
+    </div>
+    <div class="header__menu-small menu-small">
+        <div class="menu-small__list">
+            <a href="#header" class="menu-small__link">Home</a>
+            <div class="menu-small__divider">
+                <img src="images/dist/divider.svg" class="menu-small__divider-icon" alt="Divide line">
+            </div>
+            <a href="#box-info" class="menu-small__link">What's inside</a>
+            <div class="menu-small__divider">
+                <img src="images/dist/divider.svg" class="menu-small__divider-icon" alt="Divide line">
+            </div>
+            <a href="#sign-up" class="menu-small__link">Kiwi Eco Box</a>
+            <div class="menu-small__divider">
+                <img src="images/dist/divider.svg" class="menu-small__divider-icon" alt="Divide line">
+            </div>
+            <a href="#about" class="menu-small__link">About</a>
+            <div class="menu-small__divider">
+                <img src="images/dist/divider.svg" class="menu-small__divider-icon" alt="Divide line">
+            </div>
+            <a href="#sign-up" class="menu-small__link">Account</a>
+        </div>
+        <div class="menu-small__ellipse menu-small__ellipse-green">
+            <img src="images/dist/green-lite-large-ellipse.svg" alt="Green lite large ellipse">
+        </div>
+        <div class="menu-small__ellipse menu-small__ellipse-pink">
+            <img src="images/dist/pink-medium-small-ellipse.svg" alt="Pink bold small ellipse">
+        </div>
+
+    </div>
+    <div class="header__banner banner">
+        <div class="banner__wrapper">
+            <h1 class="banner__title">
+                Everything You Need
+            </h1>
+            <p class="banner__subtitle">
+                to Start Living <br class="banner__subtitle-divider"> <span
+                    class="banner__subtitle-low">Zero-Waste</span>
+            </p>
+            <div class="banner__illustration illustration">
+                <div class="illustration__wrapper-main">
+                    <div class="illustration__wrapper-top">
+                        <div class="illustration__item lunch">
+                            <div class="illustration__image lunch__image">
+                                <img src="images/dist/lunch-box-image.svg" class="illustration__image-item"
+                                     alt="Lunch box image">
+                            </div>
+                            <div class="illustration__ellipse">
+                                <img src="images/dist/large-ellipse.svg" class="illustration__ellipse-item"
+                                     alt="Large ellipse">
+                            </div>
+                            <div class="lunch__line">
+                                <img src="images/dist/lunch-line-small.svg" class="lunch__small"
+                                     alt="Lunch line">
+                                <img src="images/dist/lunch-line.svg" class="lunch__large" alt="Lunch line">
+                            </div>
+                            <div class="lunch__ellipse lunch__ellipse-pink">
+                                <img src="images/dist/pink-lite-small-ellipse.svg" alt="Pink lite small ellipse">
+                            </div>
+                            <div class="lunch__ellipse lunch__ellipse-green">
+                                <img src="images/dist/green-medium-ellipse.svg" alt="Green lite small ellipse">
+                            </div>
+                        </div>
+                        <div class="illustration__item stairs">
+                            <div class="illustration__image stairs__image">
+                                <img src="images/dist/stairs-small-image.svg"
+                                     class="illustration__image-item stairs__small" alt="Small stairs image">
+                                <img src="images/dist/stairs-image.svg"
+                                     class="illustration__image-item stairs__large" alt="Stairs image">
+                            </div>
+                            <div class="illustration__ellipse">
+                                <img src="images/dist/large-ellipse.svg" class="illustration__ellipse-item"
+                                     alt="Large ellipse">
+                            </div>
+                            <div class="stairs__line">
+                                <img src="images/dist/stairs-line-small.svg" class="stairs__small"
+                                     alt="Stairs line">
+                                <img src="images/dist/stairs-line.svg" class="stairs__large"
+                                     alt="Stairs line">
+                            </div>
+                            <div class="stairs__ellipse stairs__ellipse-green">
+                                <img src="images/dist/green-lite-large-ellipse.svg" alt="Green lite small ellipse">
+                            </div>
+                        </div>
+                        <div class="illustration__center box">
+                            <div class="box__image">
+                                <img src="images/dist/box-image.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="illustration__item bag">
+                            <div class="illustration__image bag__image">
+                                <img src="images/dist/bag-image.svg"
+                                     class="illustration__image-item bag__image-item" alt="Bag image">
+                            </div>
+                            <div class="illustration__ellipse">
+                                <img src="images/dist/large-ellipse.svg" class="illustration__ellipse-item"
+                                     alt="Large ellipse">
+                            </div>
+                            <div class="bag__line">
+                                <img src="images/dist/bag-line-small.svg" class="bag__small" alt="Bag line">
+                                <img src="images/dist/bag-line.svg" class="bag__large" alt="Bag line">
+                            </div>
+                            <div class="bag__ellipse bag__ellipse-pink">
+                                <img src="images/dist/pink-bold-small-ellipse.svg" alt="Pink bold small ellipse">
+                            </div>
+                        </div>
+                        <div class="illustration__item bottle">
+                            <div class="illustration__image bottle__image">
+                                <img src="images/dist/bottle-image.svg"
+                                     class="illustration__image-item bottle__image-item" alt="Bottle image">
+                            </div>
+                            <div class="illustration__ellipse">
+                                <img src="images/dist/large-ellipse.svg" class="illustration__ellipse-item"
+                                     alt="Large ellipse">
+                            </div>
+                            <div class="bottle__line">
+                                <img src="images/dist/bottle-line-small.svg" class="bottle__small"
+                                     alt="Bottle line">
+                                <img src="images/dist/bottle-line.svg" class="bottle__large"
+                                     alt="Bottle line">
+                            </div>
+                            <div class="bottle__ellipse bottle__ellipse-green">
+                                <img src="images/dist/green-lite-small-ellipse.svg" alt="Green lite small ellipse">
+                            </div>
+                            <div class="bottle__ellipse bottle__ellipse-pink">
+                                <img src="images/dist/pink-lite-large-ellipse.svg" alt="Pink lite large ellipse">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="illustration__small box">
+                        <div class="box__image">
+                            <img src="images/dist/box-image.svg" alt="">
+                        </div>
+                        <div class="box__ellipse box__ellipse-lite">
+                            <img src="images/dist/pink-lite-large-ellipse.svg" alt="Pink lite large ellipse">
+                        </div>
+                        <div class="box__ellipse box__ellipse-bold">
+                            <img src="images/dist/pink-bold-small-ellipse.svg" alt="Pink bold small ellipse">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="banner__button">
+                <button class="button">
+                    Start now
+                </button>
+            </div>
+            <div class="banner__scroll-icon">
+                <img src="images/dist/scroll.svg" alt="Scroll icon">
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="about" class="about">
+    <div class="about__wrapper">
+        <h2 class="about__title title">
+            How it Works
+        </h2>
+        <div class="about__steps">
+            <div class="about__item step">
+                <div class="step__wrapper">
+                    <img src="images/dist/step-one-image.svg" class="step__image"
+                         alt="Illustration of girl with laptop">
+                </div>
+                <div class="step__ellipse step__ellipse-pink">
+                    <img src="images/dist/pink-medium-small-ellipse.svg" alt="Pink medium small ellipse">
+                </div>
+                <h3 class="step__title">
+                    Join The Movement
+                </h3>
+                <p class="step__text">
+                    Get started by signing up for monthly subscription. We bring you an easy way to start your
+                    zero-waste journey
+                </p>
+            </div>
+            <div class="about__divider divider">
+                <div class="divider__wrapper">
+                    <div class="divider__dash">
+                    </div>
+                    <div class="divider__image">
+                        <img src="images/dist/divider.svg" class="divider__image-item" alt="divider">
+                    </div>
+                    <div class="divider__dash">
+                    </div>
+                </div>
+            </div>
+            <div class="about__item step">
+                <div class="step__wrapper">
+                    <img src="images/dist/step-two-image.svg" class="step__image"
+                         alt="Illustration of hand with gift">
+                </div>
+                <h3 class="step__title">
+                    Get Your Box
+                </h3>
+                <p class="step__text">
+                    Every month receive your box with essential products, but plastic free and safe for the environment
+                </p>
+            </div>
+            <div class="about__divider divider">
+                <div class="divider__wrapper">
+                    <div class="divider__dash">
+                    </div>
+                    <div class="divider__image">
+                        <img src="images/dist/divider.svg" class="divider__image-item" alt="divider">
+                    </div>
+                    <div class="divider__dash">
+                    </div>
+                </div>
+            </div>
+            <div class="about__item step">
+                <div class="step__wrapper">
+                    <img src="images/dist/step-three-image.svg" class="step__image"
+                         alt="Illustration of hands keeping the Earth">
+                </div>
+                <div class="step__ellipse step__ellipse-green">
+                    <img src="images/dist/green-lite-small-ellipse.svg" alt="Green lite large ellipse">
+                </div>
+                <h3 class="step__title">
+                    Make a Difference
+                </h3>
+                <p class="step__text">
+                    Small steps can lead to bigger changes, and now you are the change. Let's build community of people
+                    who care </p>
+            </div>
+        </div>
+        <div class="about__button">
+            <button class="button">
+                Get the Box
+            </button>
+        </div>
+    </div>
+
+</section>
+<section id="box-info" class="box-info">
+    <div class="box-info__wrapper">
+        <div class="box-info__illustration secondary-illustration">
+            <div class="secondary-illustration__item bag-demo">
+                <img src="images/dist/textile-bag-icon.svg" class="secondary-illustration__icon" alt="Textile bag">
+            </div>
+            <div class="secondary-illustration__item stairs-demo">
+                <img src="images/dist/stairs-image.svg" class="secondary-illustration__icon" alt="Stairs image">
+            </div>
+            <div class="secondary-illustration__item bottle-demo">
+                <img src="images/dist/bottle-image.svg" class="secondary-illustration__icon" alt="Bottle image">
+            </div>
+            <div class="secondary-illustration__item line-bottle">
+                <img src="images/dist/green-line-bottle.svg" class="secondary-illustration__icon"
+                     alt="Green line from bottle">
+            </div>
+            <div class="secondary-illustration__item line-stairs">
+                <img src="images/dist/green-line-stairs.svg" class="secondary-illustration__icon"
+                     alt="Green line from stairs">
+            </div>
+
+        </div>
+
+        <div class="box-info__main">
+            <div class="box-info__button">
+                <button class="button">
+                    See What's Inside
+                </button>
+            </div>
+            <div class="box-info__left demo">
+                <div class="demo__ellipse demo__ellipse-pink">
+                    <img src="images/dist/pink-bold-small-ellipse.svg" alt="Pink bold small ellipse">
+                </div>
+                <div class="demo__ellipse demo__ellipse-medium">
+                    <img src="images/dist/pink-lite-large-ellipse.svg" alt="Pink lite large ellipse">
+                </div>
+                <div class="demo__ellipse demo__ellipse-green">
+                    <img src="images/dist/green-lite-large-ellipse.svg" alt="Green lite large ellipse">
+                </div>
+                <div class="demo__wrapper">
+                    <img src="images/dist/demo-image-one.avif" class="demo__image"
+                         alt="Picture of a box with a warehouse">
+                </div>
+                <div class="demo__wrapper">
+                    <img src="images/dist/demo-image-two.avif" class="demo__image"
+                         alt="Picture of a box with a warehouse">
+                </div>
+            </div>
+            <div class="box-info__right info">
+                <div class="info__header">
+                    <div class="info__divider">
+                        <img src="images/dist/divider.svg" alt="divider">
+                    </div>
+                    <h2 class="info__title title">
+                        BOX OF A MONTH
+                    </h2>
+                </div>
+                <div class="info__paragraph">
+                    <p class="info__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
+                <div class="info__button">
+                    <div class="info__leaf">
+                        <img src="images/dist/gold-leaf.svg" class="info__icon" alt="Golden leaf">
+                    </div>
+                    <button class="button">
+                        See What's Inside
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="mission" class="mission">
+    <div class="mission__wrapper">
+        <div class="mission__container foots">
+            <img src="images/dist/foots-icon.svg" class="mission__image" alt="foots-icon">
+        </div>
+        <div class="mission__container mission-line">
+            <img src="images/dist/green-line-mission.svg" class="mission__image" alt="Green line">
+        </div>
+        <div class="mission__content">
+            <div class="mission__header">
+                <div class="mission__divider">
+                    <img src="images/dist/divider.svg" alt="divider">
+                </div>
+                <p class="mission__subtitle subtitle">
+                    OUR MISSION
+                </p>
+            </div>
+            <h2 class="mission__title">
+                We are here to help you live <br> greener and more sustainably
+            </h2>
+            <p class="mission__text">
+                Small steps matter
+            </p>
+            <div class="mission__foots">
+                <img src="images/dist/foots-icon.svg" class="mission__image" alt="foots-icon">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="posts" class="posts">
+    <div class="posts__wrapper">
+        <div class="posts__content">
+            <p class="posts__subtitle subtitle">
+                Join the conversation an help us create a new world!
+            </p>
+            <h2 class="posts__title title">
+                Recent Posts
+            </h2>
+
+            <div class="posts__gallery gallery">
+                <div class="gallery__decoration">
+                    <p class="gallery__text">
+                        Instagram
+                    </p>
+                </div>
+                <div class="gallery__decoration ellipse-green">
+                    <img src="images/dist/green-lite-large-ellipse.svg" class="gallery__ellipse"
+                         alt="Green lite large ellipse">
+                </div>
+                <div class="gallery__decoration ellipse-pink">
+                    <img src="images/dist/pink-lite-large-ellipse.svg" class="gallery__ellipse"
+                         alt="Pink lite large ellipse">
+                </div>
+                <div class="gallery__item">
+                    <img src="images/dist/gallery-left-one.avif" class="gallery__image" alt="gallery image">
+                </div>
+                <div class="gallery__item">
+                    <img src="images/dist/gallery-left-two.avif" class="gallery__image" alt="gallery image">
+                </div>
+                <div class="gallery__item gallery__item-main hide">
+                    <img src="images/dist/gallery-main.avif" class="gallery__image" alt="gallery image">
+                </div>
+                <div class="gallery__item hide">
+                    <img src="images/dist/gallery-right-one.avif" class="gallery__image" alt="gallery image">
+                </div>
+                <div class="gallery__item">
+                    <img src="images/dist/gallery-left-three.avif" class="gallery__image" alt="gallery image">
+                </div>
+                <div class="gallery__item">
+                    <img src="images/dist/gallery-left-four.avif" class="gallery__image" alt="gallery image">
+                </div>
+                <div class="gallery__item hide">
+                    <img src="images/dist/gallery-right-two.avif" class="gallery__image" alt="gallery image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="blog" class="blog">
+    <div class="blog__background">
+        <img src="images/dist/blog-background.svg" class="blog__image" alt="Green line">
+    </div>
+    <div class="blog__content">
+        <h2 class="blog__title title">What's new in blog?</h2>
+        <div class="blog__articles">
+            <article class="blog__item article">
+                <div class="article__header">
+                    <img src="images/dist/article-one.avif" class="article__image" alt="Article image">
+                </div>
+                <div class="article__main">
+                    <h3 class="article__title">
+                        Why KIWI Eco Box?
+                    </h3>
+                    <div class="article__divider">
+                        <img src="images/dist/divider.svg" alt="divider">
+                    </div>
+                    <p class="article__text">
+                        Get started by signing up for monthly subscription. We bring you an easy way to start your
+                        zero-waste journey
+                    </p>
+                    <div class="article__button">
+                        <button class="button button-small">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="blog__item article">
+                <div class="article__header">
+                    <img src="images/dist/article-two.avif" class="article__image" alt="Article image">
+                </div>
+                <div class="article__main">
+                    <h3 class="article__title">
+                        What Is Inside The April Kiwi Eco Box? Portable Lunch Box </h3>
+                    <div class="article__divider">
+                        <img src="images/dist/divider.svg" alt="divider">
+                    </div>
+                    <p class="article__text">
+                        Every month receive your box with essential products, but plastic free and safe for the
+                        environment </p>
+                    <div class="article__button">
+                        <button class="button button-small">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="blog__item article">
+                <div class="article__header">
+                    <img src="images/dist/article-three.avif" class="article__image" alt="Article image">
+                </div>
+                <div class="article__main">
+                    <h3 class="article__title">
+                        Make a Difference
+                    </h3>
+                    <div class="article__divider">
+                        <img src="images/dist/divider.svg" alt="divider">
+                    </div>
+                    <p class="article__text">
+                        Small steps can lead to bigger changes, and now you are the change. Let's build community of
+                        people who care
+                    </p>
+                    <div class="article__button">
+                        <button class="button button-small">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="blog__carousel" id="myCarousel">
+            <div class="f-carousel__slide">
+                <article class="blog__item article">
+                    <div class="article__header">
+                        <img src="images/dist/article-one.avif" class="article__image" alt="Article image">
+                    </div>
+                    <div class="article__main">
+                        <h3 class="article__title">
+                            Why KIWI Eco Box?
+                        </h3>
+                        <div class="article__divider">
+                            <img src="images/dist/divider.svg" alt="divider">
+                        </div>
+                        <p class="article__text">
+                            Get started by signing up for monthly subscription. We bring you an easy way to start your
+                            zero-waste journey
+                        </p>
+                        <div class="article__button">
+                            <button class="button-more">
+                                <span class="button-more__text">
+                                    Read more
+                                </span>
+                                <span class="button-more__plus">
+                                    +
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <div class="f-carousel__slide">
+                <article class="blog__item article">
+                    <div class="article__header">
+                        <img src="images/dist/article-two.avif" class="article__image" alt="Article image">
+                    </div>
+                    <div class="article__main">
+                        <h3 class="article__title">
+                            What Is Inside The April Kiwi Eco Box? Portable Lunch Box </h3>
+                        <div class="article__divider">
+                            <img src="images/dist/divider.svg" alt="divider">
+                        </div>
+                        <p class="article__text">
+                            Every month receive your box with essential products, but plastic free and safe for the
+                            environment </p>
+                        <div class="article__button">
+                            <button class="button-more">
+                                <span class="button-more__text">
+                                    Read more
+                                </span>
+                                <span class="button-more__plus">
+                                    +
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="f-carousel__slide">
+                <article class="blog__item article">
+                    <div class="article__header">
+                        <img src="images/dist/article-three.avif" class="article__image" alt="Article image">
+                    </div>
+                    <div class="article__main">
+                        <h3 class="article__title">
+                            Make a Difference
+                        </h3>
+                        <div class="article__divider">
+                            <img src="images/dist/divider.svg" alt="divider">
+                        </div>
+                        <p class="article__text">
+                            Small steps can lead to bigger changes, and now you are the change. Let's build community of
+                            people who care
+                        </p>
+                        <div class="article__button">
+                            <button class="button-more">
+                                <span class="button-more__text">
+                                    Read more
+                                </span>
+                                <span class="button-more__plus">
+                                    +
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sign-up" class="sign-up">
+    <div class="sign-up__wrapper">
+        <div class="sign-up__content">
+            <div class="sign-up__divider sign-up__divider-small">
+                <img src="images/dist/divider.svg" alt="divider">
+            </div>
+            <p class="sign-up__subtitle subtitle">
+                Stay in the know
+            </p>
+            <div class="sign-up__top">
+                <div class="sign-up__divider">
+                    <img src="images/dist/divider.svg" alt="divider">
+                </div>
+                <h2 class="sign-up__title title">
+                    Hear about the latest sneak peaks and spoilers
+                </h2>
+            </div>
+            <p class="sign-up__banner">
+                Get CAUSEBOX delivered directly <br>
+                <span class="sign-up__banner sign-up__banner-green">
+                to your inbox!
+            </span>
+            </p>
+
+            <div class="sign-up__main">
+                <div class="sign-up__left form">
+                    <div class="form__leaf form-leaf">
+                        <img src="images/dist/gold-leaf.svg" class="form-leaf__image" alt="Gold leaf">
+                    </div>
+                    <form class="form__wrapper" id="emailForm" name="emailForm" method="get" action="">
+                        <input class="form__input"
+                               required
+                               type="email"
+                               name="email"
+                               placeholder="Your email address">
+                        <input class="form__button button"
+                               type="submit"
+                               data-src="#dialog-content"
+                               value="Sign up">
+                    </form>
+                    <p class="form__warning">
+                        By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web
+                        <a href="/"
+                           class="form__link"
+                           target="_blank">terms
+                            of use</a>
+                        and <a href="/" class="form__link" target="_blank">privacy and cookie policy</a>
+                    </p>
+                </div>
+                <div class="sign-up__right sign-up-illustration">
+                    <div class="sign-up-illustration__box">
+                        <img src="images/dist/box-image.svg" class="sign-up-illustration__image" alt="Box image">
+                    </div>
+                    <div class="sign-up-illustration__items secondary-illustration">
+                        <div class="secondary-illustration__item bag-demo">
+                            <img src="images/dist/textile-bag-icon.svg" class="secondary-illustration__icon"
+                                 alt="Textile bag">
+                        </div>
+                        <div class="secondary-illustration__item stairs-demo">
+                            <img src="images/dist/stairs-image.svg" class="secondary-illustration__icon"
+                                 alt="Stairs image">
+                        </div>
+                        <div class="secondary-illustration__item bottle-demo">
+                            <img src="images/dist/bottle-image.svg" class="secondary-illustration__icon"
+                                 alt="Bottle image">
+                        </div>
+                        <div class="secondary-illustration__item line-bottle">
+                            <img src="images/dist/green-line-bottle.svg" class="secondary-illustration__icon"
+                                 alt="Green line from bottle">
+                        </div>
+                        <div class="secondary-illustration__item line-stairs">
+                            <img src="images/dist/green-line-stairs.svg" class="secondary-illustration__icon"
+                                 alt="Green line from stairs">
+                        </div>
+
+                    </div>
+                    <p class="sign-up__banner sign-up__banner-small">
+                        Get CAUSEBOX delivered directly
+                        <span class="sign-up__banner sign-up__banner-green">
+                to your inbox!
+            </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dialog-content" class="modal" style="display:none;max-width:500px;">
+        <div class="modal__wrapper">
+            <div class="modal__left">
+                <img src="images/dist/mosal-icon.svg" class="modal__image" alt="Hearts in hands">
+            </div>
+            <div class="modal__right">
+                <h3 class="modal__title title">
+                    Thank you for <span class="title title__green">subscribing!</span>
+                </h3>
+                <div class="modal__divider">
+                    <img src="images/dist/divider.svg" alt="divider">
+                </div>
+                <p class="modal__text">
+                    Now you will receive alerts when new news and boxes are released!
+                </p>
+                <button class="modal__button button" id="close-modal">
+                    Good
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="feedback" class="feedback">
+    <div class="feedback__wrapper">
+        <div class="feedback__quotes">
+            <img src="images/dist/feedback-background-icon.svg" alt="quotes">
+        </div>
+        <div class="feedback__quotes-small">
+            <img src="images/dist/quotes-small.svg" alt="quotes">
+        </div>
+        <div class="feedback__ellipse ellipse__pink">
+            <img src="images/dist/pink-lite-large-ellipse.svg" alt="pink-lite-large-ellipse">
+        </div>
+        <div class="feedback__ellipse ellipse__green-small">
+            <img src="images/dist/green-lite-small-ellipse.svg" alt="green-lite-small-ellipse">
+        </div>
+        <div class="feedback__ellipse ellipse__green-large">
+            <img src="images/dist/green-lite-large-ellipse.svg" alt="green-lite-large-ellipse">
+        </div>
+        <div class="feedback__line">
+            <img src="images/dist/feedback-line.svg" alt="line">
+        </div>
+
+        <div class="feedback__content">
+            <p class="feedback__subtitle subtitle">
+                What do our
+            </p>
+            <h2 class="feedback__title title">
+                Clients say
+            </h2>
+
+            <div class="feedback__item">
+                <div class="feedback__left">
+                    <img src="images/dist/feedback-image.avif" class="feedback__image" alt="User photo">
+                </div>
+                <div class="feedback__right">
+                    <div class="feedback__header user">
+                        <div class="user__photo">
+                            <img src="images/dist/user-photo-small.avif" class="user__icon" alt="user icon">
+                        </div>
+                        <div class="user__header">
+                            <p class="user__name">
+                                Jessica T.
+                            </p>
+                            <div class="user__rate">
+                                <img src="images/dist/rating.svg" class="user__rating" alt="rating">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__divider">
+                        <img src="images/dist/divider.svg" alt="divider">
+                    </div>
+                    <div class="feedback__container">
+                        <p class="feedback__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <p class="feedback__text">
+                            Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        </p>
+                        <p class="feedback__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                    <div class="feedback__gradient"></div>
+                    <div class="feedback__buttons buttons">
+                        <div class="buttons__prev">
+                            <img src="images/dist/arrow_left.svg" alt="arrow left">
+                        </div>
+                        <div class="buttons__next">
+                            <img src="images/dist/arrow_right.svg" alt="arrow right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__main">
+        <div class="footer__content">
+            <div class="footer__small-logo">
+                <img src="images/dist/logo.svg" class="footer__icon" alt="logo">
+            </div>
+            <div class="footer__left navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a href="#header" class="navbar__link">Home</a></li>
+                    <li class="navbar__item navbar__item-boxes"><a class="navbar__link">Boxes</a>
+                        <ul class="navbar__dropdown footer-dropdown">
+                            <li class="footer-dropdown__item"><a href="#box-info" class="footer-dropdown__link">What's inside</a></li>
+                            <li class="footer-dropdown__item"><a href="#sign-up" class="footer-dropdown__link">Kiwi Eco Box</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item navbar__item-hide"><a href="#box-info" class="navbar__link">What's inside</a></li>
+                    <li class="navbar__item navbar__item-hide"><a href="#sign-up" class="navbar__link">Kiwi Eco Box</a></li>
+                    <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
+                    <li class="navbar__item"><a href="#sign-up" class="navbar__link">Account</a></li>
+                    <li class="navbar__item"><a href="#blog" class="navbar__link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__center">
+                <div class="footer__logo">
+                    <img src="images/dist/logo.svg" class="footer__icon" alt="logo">
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__item navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item"><a href="mailto:mariana.harnyk@gmail.com" class="navbar__link">Faq</a></li>
+                        <li class="navbar__item"><a href="mailto:mariana.harnyk@gmail.com" class="navbar__link">CONTACT US</a>
+                    </ul>
+                </div>
+                <div class="footer__item socials">
+                    <div class="socials__item">
+                        <img src="images/dist/facebook.svg" class="socials__icon" alt="facebook">
+                    </div>
+                    <div class="socials__item">
+                        <img src="images/dist/instagram.svg" class="socials__icon" alt="instagram">
+                    </div>
+                    <div class="socials__item">
+                        <img src="images/dist/twitter.svg" class="socials__icon" alt="twitter">
+                    </div>
+                    <div class="socials__item">
+                        <img src="images/dist/youtube.svg" class="socials__icon" alt="youtube">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom creator-data">
+        <p class="creator-data__text">
+            Kiwi Eco Box © 2021
+        </p>
+        <div class="creator-data__company">
+            <p class="creator-data__text">
+                Development by SheepFish
+            </p>
+            <div class="creator-data__logo">
+                <img src="images/dist/creator-logo.svg" class="creator-data__icon" alt="creator logo">
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

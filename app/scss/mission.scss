@@ -1,0 +1,157 @@
+.mission {
+  overflow: hidden;
+
+  &__wrapper {
+    max-width: $max-container-width;
+    margin: auto;
+    padding: 6.25rem 1.625rem;
+    position: relative;
+  }
+
+  &__content {
+    max-width: $max-content-width;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1.25rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  &__title {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-family: $main-font;
+    color: $main-title-color;
+  }
+
+  &__text {
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    width: fit-content;
+    background: linear-gradient(to bottom right, $dash-gradient-from-color, $dash-gradient-to-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: 53%;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__foots {
+    display: none;
+  }
+}
+
+.foots {
+  top: 33%;
+  left: 7%;
+}
+
+.mission-line {
+  right: 0;
+  bottom: -7%;
+}
+
+@media all and (max-width: 1680px) {
+  .foots,
+  .mission-line {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .mission {
+
+    &__content {
+      align-items: center;
+    }
+
+    &__header {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.625rem;
+    }
+
+    &__title {
+      font-size: 5rem;
+      line-height: 5rem;
+      text-align: center;
+    }
+
+    &__text {
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    &__foots {
+      display: flex;
+      width: 4.75rem;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .mission {
+
+    &__title {
+      font-size: 4rem;
+      line-height: 4rem;
+      text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .mission {
+
+    &__wrapper {
+      padding: 3.125rem 1rem 1.25rem;
+    }
+
+    &__header {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.625rem;
+    }
+
+    &__title {
+      font-family: $main-font;
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    &__text {
+      font-size: 1.625rem;
+      line-height: 1.625rem;
+    }
+
+    &__foots {
+      display: flex;
+      width: 4.75rem;
+    }
+  }
+}
+

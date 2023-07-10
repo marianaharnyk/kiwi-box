@@ -1,0 +1,974 @@
+
+.header {
+
+  &__banner {
+    margin: 8.75rem auto 0;
+    background: linear-gradient(to bottom right, $header-light-background-color, $header-dark-background-color);
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: $main-light-color;
+  border-bottom: 1px solid $main-background-color;
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    gap: 6.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6.25rem;
+  }
+
+  &__item {
+    list-style: none;
+    display: inline-block;
+  }
+
+  &__item:hover > .dropdown {
+    display: inherit;
+  }
+
+  &__link {
+    text-decoration: transparent;
+    font-family: $main-font;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $header-title-color-dark;
+    transition: all .3s;
+    letter-spacing: 0.03rem;
+  }
+
+  &__link:hover {
+    color: $main-accent-color;
+    text-decoration: underline;
+  }
+
+  &__logo {
+    height: 6.25rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+}
+
+.dropdown {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 5rem;
+
+  &__item {
+    float: none;
+    display: list-item;
+    position: relative;
+    padding: 1.875rem 1.25rem;
+    background-color: $main-light-color;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  &__item:hover {
+    background-color: $main-background-color;
+  }
+
+  &__link {
+    text-decoration: transparent;
+    font-family: $main-font;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $header-title-color-dark;
+    transition: all .3s;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.banner {
+  overflow: hidden;
+
+  &__wrapper {
+    max-width: $max-container-width;
+    padding: 4.375rem 1.625rem;
+    margin: auto;
+    position: relative;
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: $header-title-color-dark;
+    letter-spacing: 0.03rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    width: fit-content;
+    color: $main-light-color;
+    position: relative;
+    left: 53%;
+
+    &-low {
+      position: relative;
+      left: 8%;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__scroll-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -1.5%;
+    left: 18%;
+    transform: scale(0.8);
+  }
+}
+
+.illustration {
+  bottom: 4rem;
+  position: relative;
+
+  &__wrapper-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__item {
+    width: 14%;
+    position: relative;
+  }
+
+  &__center {
+    width: 32%;
+  }
+
+  &__small {
+    display: none;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+
+    &-item {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    width: 92%;
+    transform: translateX(-50%);
+
+    &-item {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.lunch {
+  &__image {
+    top: 1.5rem;
+    right: 5%;
+    transform: scale(1.2);
+  }
+
+  &__line {
+    position: absolute;
+    left: 46%;
+    top: 67%;
+    transform: rotate(11deg) scale(1);
+  }
+
+  &__small {
+    display: none;
+  }
+
+  &__ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    &-pink {
+      bottom: 80%;
+      left: 21%;
+    }
+
+    &-green {
+      top: 114%;
+      left: 21%;
+    }
+  }
+}
+
+.stairs {
+  &__image {
+    top: 0.1rem;
+    right: 8%;
+    transform: scale(2);
+  }
+
+  &__small {
+    display: none;
+  }
+
+  &__line {
+    position: absolute;
+    left: 59%;
+    bottom: 84%;
+  }
+
+  &__small {
+    display: none;
+  }
+
+  &__ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    &-green {
+      right: 96%;
+      bottom: 113%;
+    }
+  }
+}
+
+.bag {
+  &__image {
+    left: 10%;
+    transform: scale(2.3);
+  }
+
+  &__line {
+    position: absolute;
+    top: 138%;
+    right: 57%;
+    transform: rotate(13deg);
+  }
+
+  &__small {
+    display: none;
+  }
+
+  &__ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    &-pink {
+      bottom: 113%;
+      left: 119%;
+    }
+  }
+}
+
+.bottle {
+  &__image {
+    right: 3%;
+    transform: scale(1.3);
+  }
+
+  &__line {
+    position: absolute;
+    top: 138%;
+    right: 61%;
+    transform: rotate(10deg) scale(1);
+  }
+
+  &__small {
+    display: none;
+  }
+
+  &__ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    &-green {
+      right: 0;
+      bottom: 100%;
+    }
+
+    &-pink {
+      right: 67%;
+      top: 100%;
+    }
+  }
+}
+
+.box {
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    right: 5%;
+    transform: scale(1.4);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+.menu-small {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $main-background-color;
+  overflow: hidden;
+  margin: auto;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5625rem;
+    z-index: 2;
+  }
+
+  &__link {
+    text-decoration: transparent;
+    font-family: $main-font;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: $header-title-color-dark;
+    transition: all .3s;
+    letter-spacing: 0.03rem;
+  }
+
+  &__link:hover {
+    color: $main-accent-color;
+    text-decoration: underline;
+  }
+
+  &__ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    &-pink {
+      bottom: 17%;
+      right: 22%;
+    }
+
+    &-green {
+      bottom: -5%;
+      right: -5%;
+      transform: scale(3.5);
+    }
+  }
+}
+
+.menu-small.active {
+  top: 0;
+  transition: top 0.3s ease-in 0.1s;
+}
+
+
+@media all and (max-width: 1680px) {
+  .box {
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      right: 5%;
+      transform: scale(1.2);
+    }
+  }
+  .banner {
+    &__subtitle {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+  .lunch {
+    &__line {
+      top: 50%;
+    }
+  }
+
+  .bottle {
+    &__line {
+      right: 54%;
+      transform: rotate(13deg) scale(1);
+    }
+  }
+}
+
+
+@media all and (max-width: 1440px) {
+  .bottle {
+    &__line {
+      right: 33%;
+      top: 127%;
+    }
+  }
+}
+
+@media all and (max-width: 1366px) {
+}
+
+@media all and (max-width: 1280px) {
+  .lunch {
+    &__image {
+      top: 1rem;
+    }
+
+    &__line {
+      top: 23%;
+      left: 9%;
+      transform: rotate(11deg) scale(0.8);
+    }
+  }
+
+  .banner {
+    &__title {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+
+    &__subtitle {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+  }
+
+  .illustration {
+    bottom: 2rem;
+  }
+
+  .bag {
+    &__line {
+      top: 127%;
+      transform: rotate(13deg) scale(0.8);
+    }
+  }
+
+  .bottle {
+    &__line {
+      right: 25%;
+      top: 114%;
+      transform: rotate(6deg) scale(0.7);
+    }
+  }
+
+  .lunch,
+  .stairs,
+  .bag,
+  .bottle {
+    &__ellipse {
+      &-green,
+      &-pink {
+        transform: scale(0.7);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .banner {
+    &__title {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+    &__subtitle {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  .menu {
+    &__body {
+      gap: 4rem;
+    }
+
+    &__list {
+      gap: 4rem;
+    }
+  }
+
+  .lunch {
+    &__line {
+      top: 42%;
+      left: 3%;
+      bottom: 0;
+      transform: rotate(11deg) scale(0.6);
+    }
+  }
+
+  .stairs {
+    &__line {
+      left: 46%;
+      bottom: 64%;
+      transform: scale(0.6);
+    }
+  }
+
+  .bag {
+    &__line {
+      top: 119%;
+      right: 57%;
+      transform: rotate(13deg) scale(0.8);
+    }
+  }
+  .bottle {
+    &__line {
+      right: -30%;
+      top: 107%;
+      transform: rotate(2deg) scale(0.6);
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header {
+    &__banner {
+      margin: 3.75rem auto 0;
+
+    }
+  }
+
+  .banner {
+    &__wrapper {
+      padding: 1.25rem 1rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1.625rem;
+      line-height: 2.625rem;
+      position: static;
+      text-align: center;
+      width: 100%;
+
+      &-divider {
+        display: none;
+      }
+
+      &-low {
+        position: static;
+      }
+    }
+
+    &__scroll-icon {
+      display: none;
+    }
+  }
+
+  .illustration {
+    bottom: 0;
+    top: 1rem;
+
+    &__item {
+      width: 20%;
+      height: 4.5rem;
+    }
+
+    &__wrapper-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__center {
+      display: none;
+    }
+
+    &__small {
+      display: block;
+    }
+  }
+
+  .box {
+    &__image {
+      transform: scale(0.9);
+    }
+
+    &__ellipse {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+
+      &-lite {
+        top: 32%;
+        left: 12%;
+        z-index: 3;
+      }
+
+      &-bold {
+        top: 35%;
+        right: 36%;
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  .lunch {
+    &__image {
+      top: 1rem;
+      right: 0;
+      left: 4%;
+      transform: rotate(40deg) scale(1.3);
+    }
+
+    &__line {
+      top: 180%;
+      left: 46%;
+      transform: rotate(11deg) scale(2);
+    }
+
+    &__small {
+      display: block;
+    }
+
+    &__large {
+      display: none;
+    }
+
+    &__ellipse {
+      display: none;
+    }
+  }
+
+  .stairs {
+    &__image {
+      top: unset;
+      right: 0;
+      bottom: 0.5rem;
+      transform: rotate(3deg) scale(1.1);
+    }
+
+    &__large {
+      display: none;
+    }
+
+    &__small {
+      display: block;
+    }
+
+    &__line {
+      left: 90%;
+      top: 177%;
+      bottom: unset;
+      transform: scale(2);
+    }
+
+    &__small {
+      display: block;
+    }
+
+    &__large {
+      display: none;
+    }
+
+    &__ellipse {
+      display: none;
+    }
+  }
+
+  .bag {
+    &__image {
+      left: 10%;
+      transform: scale(2.7);
+    }
+
+    &__line {
+      position: absolute;
+      top: 205%;
+      right: 43%;
+      transform: rotate(12deg) scale(2);
+    }
+
+    &__small {
+      display: block;
+    }
+
+    &__large {
+      display: none;
+    }
+
+    &__ellipse {
+      display: none;
+    }
+  }
+
+  .bottle {
+    &__image {
+      right: 6%;
+      top: 9%;
+      transform: rotate(30deg) scale(1.4);
+    }
+
+    &__line {
+      position: absolute;
+      top: 215%;
+      right: 44%;
+      transform: rotate(10deg) scale(1.7);
+    }
+
+    &__small {
+      display: block;
+    }
+
+    &__large {
+      display: none;
+    }
+
+    &__ellipse {
+      display: none;
+    }
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+  .menu {
+    padding: 0.3125rem 1rem;
+
+    &__body {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__burger {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 1.0625rem;
+      height: 0.6875rem;
+      z-index: 5;
+      background-color: $main-light-color;
+
+      &-dash,
+      &-dash::before,
+      &-dash::after {
+        position: absolute;
+        left: 0;
+        height: 0.0625rem;
+        width: 100%;
+        background-color: $burger-menu-color;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &-dash::before,
+      &-dash::after {
+        content: " ";
+      }
+
+      &-dash::before {
+        top: 0.3125rem;
+      }
+
+      &-dash::after {
+        bottom: 0.3125rem;
+      }
+
+      &-dash.active {
+        background-color: $main-light-color;
+      }
+
+      &-dash.active::before {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+
+      &-dash.active::after {
+        bottom: 40%;
+        top: 0;
+        transform: rotate(45deg);
+      }
+    }
+
+
+    &__logo {
+      height: 3.125rem;
+    }
+  }
+
+}
+
+@media all and (max-width: 666px) {
+  .illustration__item {
+    height: 4rem;
+  }
+
+  .lunch {
+    &__line {
+      top: 176%;
+      transform: rotate(11deg) scale(1.2);
+    }
+  }
+
+  .stairs {
+    &__line {
+      top: 162%;
+      transform: scale(1.2);
+    }
+  }
+
+  .bag {
+    &__line {
+      top: 175%;
+      transform: rotate(12deg) scale(1.2);
+    }
+  }
+
+  .bottle {
+    &__line {
+      top: 165%;
+      transform: rotate(10deg) scale(1);
+    }
+  }
+
+  .box {
+    &__ellipse {
+      &-lite {
+        top: 32%;
+        left: 12%;
+        z-index: 3;
+        transform: scale(0.8);
+      }
+
+      &-bold {
+        top: 35%;
+        right: 36%;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 420px) {
+  .illustration__item {
+    height: 3rem;
+  }
+
+  .lunch {
+    &__line {
+      top: 160%;
+      transform: rotate(11deg) scale(1);
+    }
+  }
+
+  .stairs {
+    &__line {
+      top: 122%;
+      transform: scale(1);
+    }
+  }
+
+  .bag {
+    &__line {
+      top: 145%;
+      transform: rotate(12deg) scale(1);
+    }
+  }
+
+  .bottle {
+    &__line {
+      top: 129%;
+      transform: rotate(10deg) scale(0.9);
+    }
+  }
+
+  .box {
+    &__ellipse {
+      &-lite {
+        top: 30%;
+        left: 8%;
+        z-index: 3;
+        transform: scale(0.6);
+      }
+
+      &-bold {
+        top: 35%;
+        right: 36%;
+        transform: scale(1);
+      }
+    }
+  }
+}
