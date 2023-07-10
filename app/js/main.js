@@ -55,5 +55,11 @@
         Fancybox.close();
     });
 
+    const buttons = document.querySelectorAll(".scroll-to-sign-up");
+    buttons.forEach(item => {
+        item.addEventListener("click", function (e) {
+            document.getElementById('sign-up').scrollIntoView({ behavior: 'smooth' });
+        });
+    })
 
 })();
